@@ -1,0 +1,142 @@
+.backdrop{
+    position: relative;
+    min-height: 100vh;
+    background:linear-gradient(45deg,rgb(10, 10, 44),rgb(9, 9, 129));
+    overflow-x: hidden;
+}
+.backdrop::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.star {
+    border-radius: 50%;
+    background: rgb(182, 215, 255);
+    display: block;
+    position: absolute;
+    -webkit-animation: glow 4000ms linear infinite;
+    animation: glow 4000ms linear infinite;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        opacity: 0.7;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.7;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.moon{
+    position :absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+}
+.aurora{
+    position :absolute;
+    top: 0px;
+    left: 50%;
+    width: 600px;
+}
+.rocket{
+    position :absolute;
+    top: 0px;
+    left: 0%;
+    width: 300px;
+}
+
+@font-face {
+    font-family: 'fasthand';
+    src: url('../../fonts/FastHand-lgBMV.ttf');
+}
+@font-face {
+    font-family: 'moonface';
+    src: url('../../fonts/Walk\ The\ Moon\ Gradient\ Italic\ 400.ttf');
+}
+.heading1{
+   font-family: 'moonface';
+    font-size: 120px;
+    /* color: rgb(225, 0, 229); */
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #f378e3;
+    background-image: linear-gradient(45deg, #f200ff, #ff001e);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 10px #f200ff, 0 0 20px rgb(206, 6, 6), 0 0 30px #e60073;
+    cursor: grab;
+    user-select: none;
+  
+}
+
+
+.clouds{
+    position:absolute;
+    top:4%;
+    width: 136%;
+}
+
+.cloud1{
+    animation:move1 10s ease-in-out infinite ;
+    transform: translateX(-30%);
+}
+
+@keyframes move1 {
+
+    50% {
+        transform: translateX(0%);
+
+
+    }
+    
+ 
+}
+
+
+.cloud2{
+    animation:move2 10s ease-in-out infinite ;
+    transform: translateX(0%);
+}
+
+@keyframes move2 {
+
+    50% {
+        transform: translateX(-30%);
+
+
+    }
+    
+ 
+}

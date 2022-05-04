@@ -1,0 +1,36 @@
+.about{
+height: 100vh;
+background: rgb(255, 255, 255);
+
+}
+.cloudsinverted{
+    position:absolute;
+    transform: rotate(180deg) translateX(24%);
+    top:98%;
+    width: 136%;
+}
+
+
+.cloud3{
+    animation:move3 10s ease-in-out infinite ;
+    transform: translateX(-24%);
+}
+
+@keyframes move3 {
+    50% {
+        transform: translateX(0%);
+    }
+    
+}
+
+
+.cloud4{
+    animation:move4 10s ease-in-out infinite ;
+    transform: translateX(-30%);
+} 
+
+@keyframes move4 {
+    50% {
+        transform: translateX(0%);
+    }
+}
