@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./backdrop.module.css";
 import moon from "../../img/moon.png";
-import aurora from "../../img/aurora.png";
-import rocket from "../../img/rocket.png";
+// import aurora from "../../img/aurora.png";
+// import rocket from "../../img/rocket.png";
 
 export const Moon = () => {
   return (

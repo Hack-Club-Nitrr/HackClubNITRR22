@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { EditorState } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
-import { convertToHTML } from "draft-convert";
+// import { convertToHTML } from "draft-convert";
 import DOMPurify from "dompurify";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { convertToRaw } from "draft-js";

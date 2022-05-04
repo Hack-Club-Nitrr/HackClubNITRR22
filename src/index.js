@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MyEditor } from "./components/editor/MyEditor";
+import { Team } from "./components/team/Team";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="texteditor" element={<MyEditor />} />
+        <Route path="team" element={<Team />} />
       </Routes>{" "}
     </BrowserRouter>
   </React.StrictMode>,

@@ -24,6 +24,6 @@ export const Stars = () => {
 
   useEffect(() => {
     createStar();
-  }, []);
+  });
   return <div ref={star} className={styles.star}></div>;
 };
