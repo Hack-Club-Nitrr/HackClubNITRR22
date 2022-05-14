@@ -104,12 +104,13 @@
 
 .clouds{
     position:absolute;
-    top:4%;
+    bottom:0%;
     width: 136%;
+    background: rgba(196, 196, 196, 0);
 }
 
-.cloud1{
-    animation:move1 10s ease-in-out infinite ;
+.cloud1{    
+    animation:move1 14s ease-in-out infinite ;
     transform: translateX(-30%);
 }
 
@@ -126,7 +127,7 @@
 
 
 .cloud2{
-    animation:move2 10s ease-in-out infinite ;
+    animation:move2 14s ease-in-out infinite ;
     transform: translateX(0%);
 }
 
