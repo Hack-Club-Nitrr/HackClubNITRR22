@@ -7,6 +7,7 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { convertToRaw } from "draft-js";
 import draftToHtml from "draftjs-to-html";
 import axios from "axios";
+import styles from "./editor.module.css"
 
 export const MyEditor = () => {
   const [resState,setResState] = useState('');
@@ -73,7 +74,7 @@ export const MyEditor = () => {
   }
 
   return (
-    <div>
+    <div className={styles.markup}>
       <Editor
         editorState={editorState}
         onEditorStateChange={handleEditorChange}
@@ -81,18 +82,7 @@ export const MyEditor = () => {
         editorClassName="editor-class"
         toolbarClassName="toolbar-class"
         toolbar={{
-          options: [
-            "inline",
-            "blockType",
-            "fontSize",
-            "fontFamily",
-            "list",
-            "colorPicker",
-            "link",
-            "embedded",
-            "image",
-            "remove",
-          ],
+        
           image: {
             uploadCallback: uploadImageCallBack,
             previewImage: true,
@@ -101,14 +91,8 @@ export const MyEditor = () => {
         }}
       />
 
-      <div
-        className="preview"
-        dangerouslySetInnerHTML={createMarkup(convertedContent)}
-      ></div>
       <button onClick={()=>{handleBlog(false)}}>save progress</button>
       <button onClick={()=>{handleBlog(true)}}>Publish</button>
-      <hr />
-      <div dangerouslySetInnerHTML={createMarkup(resState)}></div>
     </div>
   );
 };

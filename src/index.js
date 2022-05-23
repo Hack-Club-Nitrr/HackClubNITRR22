@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MyEditor } from "./components/editor/MyEditor";
 import { Team } from "./components/team/Team";
+import {Project} from "./components/project/Project"
+import {Layout} from "./components/blog/Layout"
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -13,6 +16,9 @@ ReactDOM.render(
         <Route path="/" element={<App />} />
         <Route path="texteditor" element={<MyEditor />} />
         <Route path="team" element={<Team />} />
+        <Route path="projects" element={<Project/>} />
+        <Route path="blogs/:id" element={<Layout/>} />
+
       </Routes>{" "}
     </BrowserRouter>
   </React.StrictMode>,
