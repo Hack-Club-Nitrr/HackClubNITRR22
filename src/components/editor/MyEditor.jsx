@@ -6,8 +6,23 @@ import DOMPurify from "dompurify";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { convertToRaw } from "draft-js";
 import draftToHtml from "draftjs-to-html";
+import axios from "axios";
 
 export const MyEditor = () => {
+  const [resState,setResState] = useState('');
+  const handleBlog = () => {
+    const data={
+      title: "sample title",
+      author:"aditya ray",
+      body:convertedContent,
+      slug: 'sample_slug'
+    }
+    const url="https://peaceful-river-16673.herokuapp.com/providers/add_project/"
+    axios.post(url, data).then((response)=>{
+      console.log(response)
+      setResState(response.data.body)
+    })
+  }
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
   );
@@ -20,6 +35,7 @@ export const MyEditor = () => {
     const rawContentState = convertToRaw(editorState.getCurrentContent());
     const markup = draftToHtml(rawContentState);
     setConvertedContent(markup);
+    console.log(convertedContent)
   };
   const createMarkup = (html) => {
     return {
@@ -52,7 +68,10 @@ export const MyEditor = () => {
         reject(error);
       });
     });
+
+
   }
+
   return (
     <div>
       <Editor
@@ -86,6 +105,10 @@ export const MyEditor = () => {
         className="preview"
         dangerouslySetInnerHTML={createMarkup(convertedContent)}
       ></div>
+      <button onClick={()=>{handleBlog(false)}}>save progress</button>
+      <button onClick={()=>{handleBlog(true)}}>Publish</button>
+      <hr />
+      <div dangerouslySetInnerHTML={createMarkup(resState)}></div>
     </div>
   );
 };
