@@ -1,0 +1,257 @@
+.container{
+    position: relative ;
+    width: 100%;
+    height: 100vh;
+    background: rgb(1, 0, 44);
+}
+
+.logoContainer{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.burger{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.moonContainer{
+    transform:translate(0px,-50px);
+    z-index: 99;
+
+}
+.moon{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+   
+
+}
+.moonlayerone{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.613);
+    border-radius: 50%;
+    animation: scaleone 6s infinite;
+}
+.moonlayertwo{
+    position: absolute;
+    top: 130px;
+    right: 130px;
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.613);
+    border-radius: 50%;
+    animation: scaletwo 6s infinite;
+}
+
+@keyframes scaleone{
+    60%{transform: scale(1.2);}
+}
+
+
+@keyframes scaletwo{
+    60%{transform: scale(1.3);}
+}
+
+
+
+
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+  z-index: 100;
+}
+
+.wave {
+  background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%,
+	100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+.endWave{
+	display:none;
+}
+
+
+
+.star {
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    -webkit-animation: glow 4000ms linear infinite;
+    animation: glow 4000ms linear infinite;
+    z-index: -0
+}
+
+@-webkit-keyframes glow {
+    0% {
+        opacity: 0.7;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.7;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.boat{
+    z-index: 1;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    width: 440px;
+    height: 360px;
+    animation: boat 3s linear infinite;
+}
+
+@keyframes boat{
+	0%{
+		transform: rotate(0);
+	}
+
+	50%{
+		transform: rotate(-3deg);
+	}
+
+	100%{
+		transform: rotate(0);
+	}
+}
+@font-face {
+    font-family: 'shark';
+    src: url('../../fonts/shark.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+.banner{
+    font-family: 'shark';
+    font-size: 76px;
+    background-image: url("https://images.pond5.com/animation-ocean-underwater-beuty-landscape-089858978_prevstill.jpeg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    width: fit-content;
+    margin: 0px auto;
+    padding-top: 200px;
+    z-index: 100;
+ 
+}
+
+.typewriter{
+    font-family: 'Comfortaa', cursive;
+    color: rgb(62, 255, 175);
+    width: fit-content;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width:767px) {
+
+.moonContainer{
+    transform:translate(-100px,-50px) scale(0.7);
+    z-index: 99;
+}
+.banner{
+    font-size: 62px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 200px;
+    z-index: 100;
+    text-shadow:  0 0 30px #00ffff, 0 0 40px #b2e0ff;
+
+ 
+}
+    
+.boat{
+    bottom: 100px;
+    left: 00px;
+    width: 330px;
+    height: 270px;
+    animation: boat 3s linear infinite;
+}
+}

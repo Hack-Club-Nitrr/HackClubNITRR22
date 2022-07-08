@@ -110,7 +110,7 @@
 }
 
 .cloud1{    
-    animation:move1 14s ease-in-out infinite ;
+    /* animation:move1 14s ease-in-out infinite ; */
     transform: translateX(-30%);
 }
 
@@ -127,7 +127,7 @@
 
 
 .cloud2{
-    animation:move2 14s ease-in-out infinite ;
+    /* animation:move2 14s ease-in-out infinite ; */
     transform: translateX(0%);
 }
 

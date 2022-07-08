@@ -8,7 +8,8 @@ import { MyEditor } from "./components/editor/MyEditor";
 import { Team } from "./components/team/Team";
 import {Project} from "./components/project/Project"
 import {Layout} from "./components/blog/Layout"
-
+import {Hero} from "./components/hero/Hero"
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -17,7 +18,9 @@ ReactDOM.render(
         <Route path="texteditor" element={<MyEditor />} />
         <Route path="team" element={<Team />} />
         <Route path="projects" element={<Project/>} />
-        <Route path="blogs/:id" element={<Layout/>} />
+        <Route path="blogs/:id/:title" element={<Layout/>} />
+        <Route path="hero" element={<Hero/>} />
+
 
       </Routes>{" "}
     </BrowserRouter>

@@ -1,46 +1,43 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
-import { Link } from 'react-router-dom';
-import { Layout } from '../blog/Layout';
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { getAllArticles } from "../../api";
 export const Project = () => {
+  const [projects, setProjects] = useState([]);
 
-    const  [projects,setProjects]= useState([])
+  useEffect(() => {
+    getAllArticles().then(function(value) {    setProjects(value);
+})    
+  }, []);
 
-    useEffect(()=>{
-        const url="https://peaceful-river-16673.herokuapp.com/providers/get_projects/"
-
-        axios.get(url).then((res)=>{
-            console.log(res.data)
-            setProjects(res.data)
-            localStorage.setItem("projects", JSON.stringify(res.data))
-        })
-
-    },[])
-
-    
+  const slugify = (str) =>
+    str
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/[\s_-]+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
   return (
     <div>
-        {projects.map((project, id)=>{
-            return(
-                <div>
-                    id: {project.id}
-                    <br />
-                    title : {project.title}
-                    <br />
-                    author : {project.author}
-                    <br />
-                    date :{ project.date}
-                    <br />
-                    <Link  to={'/blogs/' + project.id} >read</Link>
-
-                    <br />
-                    <hr />
-                    <br />
-                </div>
-            )
-        })}
+      {projects.map((project, id) => {
+        return (
+          <div>
+            id: {project.id}
+            <br />
+            title : {project.title}
+            <br />
+            author : {project.author}
+            <br />
+            date :{project.date}
+            <br />
+            <Link to={"/blogs/" + project.id + "/" + slugify(project.title)}>read</Link>
+            <br />
+            <hr />
+            <br />
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
