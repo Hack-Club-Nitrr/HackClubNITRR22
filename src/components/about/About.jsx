@@ -7,9 +7,10 @@ import Col from "react-bootstrap/Col";
 export const About = () => {
   return (
     <div className={styles.about}>
+      <br /><br /><br /><br /> <br /> <br /> <br /> <br />
       <Row>
         <Col sm={6}>
-          <br /> <br /> <br /> <br /> <br />
+ <br /> <br />
           <div className={styles.whale}>
             <div className={styles.whalebody}>
               <div className={styles.whaleeyes}></div>
@@ -36,7 +37,7 @@ export const About = () => {
           </div>
         </Col>
       </Row>
-
+      <br /><br /><br /><br /> <br /> <br /> <br /> <br />
      
     </div>
   );

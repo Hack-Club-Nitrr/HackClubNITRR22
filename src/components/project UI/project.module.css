@@ -1,316 +1,389 @@
-.projects{
-    position: relative;
-    height: fit-content;
-    width: 100%;
-    background: linear-gradient(to bottom,#015871,#01002a);
-    padding: 200px 4%;
-    }
-    
+.projects {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #010453, #01002a);
+  height: fit-content;
+  padding: 100px 14%;
+}
+@font-face {
+  font-family: "shark";
+  src: url("../../fonts/shark.ttf");
+}
 
-  .ocean {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: #01597100;
-  }
-  
-  .bubble {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    position: absolute;
-    background-color: white;
-    bottom: -30px;
-    opacity: 0.2;
-    animation: bubble 15s ease-in-out infinite,
-      sideWays 4s ease-in-out infinite alternate;
-  }
-  
-  @keyframes bubble {
-    0% {
-      transform: translateY(0%);
-      opacity: 0.06;
-    }
-    100% {
-      transform: translateY(-200vh);
-    }
-  }
-  
-  @keyframes sideWays {
-    0% {
-      margin-left: 0px;
-    }
-    100% {
-      margin-left: 3em;
-    }
-  }
-  
-  .bubble1 {
-    left: 10%;
-    animation-delay: 0.5s;
-    animation-duration: 16s;
-    opacity: 0.2;
-  }
-  
-  .bubble2 {
-    width: 15px;
-    height: 15px;
-    left: 40%;
-    animation-delay: 1s;
-    animation-duration: 10s;
-    opacity: 0.1;
-  }
-  
-  .bubble3 {
-    width: 10px;
-    height: 10px;
-    left: 30%;
-    animation-delay: 5s;
-    animation-duration: 20s;
-    opacity: 0.3;
-  }
-  
-  .bubble4 {
-    width: 25px;
-    height: 25px;
-    left: 40%;
-    animation-delay: 8s;
-    animation-duration: 17s;
-    opacity: 0.2;
-  }
-  
-  .bubble5 {
-    width: 30px;
-    height: 30px;
-    left: 60%;
-    animation-delay: 10s;
-    animation-duration: 15s;
-    opacity: 0.1;
-  }
-  
-  .bubble6 {
-    width: 10px;
-    height: 10px;
-    left: 80%;
-    animation-delay: 3s;
-    animation-duration: 30s;
-    opacity: 0.4;
-  }
-  
-  .bubble7 {
-    width: 15px;
-    height: 15px;
-    left: 90%;
-    animation-delay: -7s;
-    animation-duration: 25s;
-    opacity: 0.3;
-  }
-  
-  .bubble9 {
-    width: 20px;
-    height: 20px;
-    left: 50%;
-    bottom: 30px;
-    animation-delay: -5s;
-    animation-duration: 19s;
-    opacity: 0.2;
-  }
-  
-  .bubble10 {
-    width: 40px;
-    height: 40px;
-    left: 30%;
-    bottom: 30px;
-    animation-delay: -21s;
-    animation-duration: 16s;
-    opacity: 0.3;
-  }
-  
-  .bubble11 {
-    width: 30px;
-    height: 30px;
-    left: 60%;
-    bottom: 30px;
-    animation-delay: -13.75s;
-    animation-duration: 20s;
-    opacity: 0.3;
-  }
-  
-  .bubble12 {
-    width: 25px;
-    height: 25px;
-    left: 90%;
-    bottom: 30px;
-    animation-delay: -10.5s;
-    animation-duration: 19s;
-    opacity: 0.3;
-  }
-  
+.banner {
+  font-family: "shark";
+  font-size: 64px;
+  color: rgb(78, 211, 255);
+  font-weight: 900;
+  width: fit-content;
+  margin: 0px auto;
+  display: block;
+  padding: 100px 0px;
+}
+.ocean {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #01597100;
+}
 
+.bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -30px;
+  opacity: 0.2;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
 
-  
- 
-  
-  .projects h1, h2 {
-    font-family: 'Comfortaa', cursive;
-    margin-top: 0;
-    text-transform: uppercase;
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.06;
   }
-  
-  .projects figure {
-    margin: 0;
+  100% {
+    transform: translateY(-200vh);
   }
-  
-  .projects img {
-    height: auto;
-    width: 100%;  
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
   }
-  
+  100% {
+    margin-left: 3em;
+  }
+}
+
+.bubble1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble12 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+  opacity: 0.3;
+}
+
+.projects h1,
+h2 {
+  font-family: "Comfortaa", cursive;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.projects figure {
+  margin: 0;
+}
+
+.projects img {
+  height: auto;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 24px;
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper > * {
+  grid-column: 1 / span 2;
+}
+
+.header {
+  font-size: 1.5em;
+  grid-row: 1 / 2;
+  color: white;
+}
+
+.header:after {
+  background: #00bfff;
+  content: "";
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.article {
+  text-align: right;
+}
+
+.featured-image-1 {
+  grid-row: 2 / 3;
+}
+
+.number-1 {
+  grid-row: 2 / 4;
+}
+
+.featured-image-2,
+.number-2 {
+  grid-row: 4 / 5;
+}
+
+.number-1,
+.number-4 {
+  align-self: end;
+  color: rgba(104, 23, 186, 0.5);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 480px;
+  line-height: 480px;
+  grid-column: 1 / 2;
+}
+
+.article-1,
+.article-4 {
+  grid-column: 2 / 3;
+}
+
+.featured-image-2,
+.number-2 {
+  align-self: end;
+}
+
+.number-2 {
+  color: #eee;
+  font-size: 200px;
+  justify-self: end;
+  line-height: 160px;
+}
+
+.number-3 {
+  background: black;
+  border-radius: 130px;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 100px;
+  height: 130px;
+  line-height: 130px;
+  position: absolute;
+  grid-row: 6 / 7;
+  right: -20px;
+  text-align: center;
+  top: -20px;
+  width: 130px;
+}
+
+.featured-image-3 img {
+  height: 100%;
+}
+
+.number-4 {
+  font-size: 320px;
+  left: -20px;
+  line-height: 320px;
+  position: absolute;
+}
+
+@media (min-width: 600px) {
   .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 24px;
-    max-width: 1200px;
-    position: relative;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    margin: 24px auto;
   }
-  
-  .wrapper > * {
-    grid-column: 1 / span 2;
-  }
-  
+
   .header {
-    font-size: 1.5em;
-    grid-row: 1 / 2;
-    color: white
+    grid-column: 3 / 5;
+    width: 70%;
   }
-  
-  .header:after {
-    background: #00bfff;
-    content: "";
-    display: block;
-    height: 20px;
-    width: auto;
-  }
-  
-  .article {
-    text-align: right;
-  }
-  
+
   .featured-image-1 {
-    grid-row: 2 / 3;
+    grid-row: 1 / 3;
   }
-  
-  .number-1 {
-    grid-row: 2 / 4;
+
+  .article-1 {
+    grid-row: 3 / 4;
   }
-  
-  .featured-image-2, .number-2 {
+
+  .article-2 {
+    grid-column: 4 / 5;
     grid-row: 4 / 5;
   }
-  
-  .number-1, .number-4 {
-    align-self: end;
-    color: rgba(104,23,186,0.5);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 480px;
-    line-height: 480px;
-    grid-column: 1 / 2;
-  }
-  
-  .article-1, .article-4 {
-    grid-column: 2 / 3;
-  }
-  
-  .featured-image-2, .number-2 {
-    align-self: end;
-  }
-  
+
+  .featured-image-2,
   .number-2 {
-    color: #eee;
-    font-size: 200px;
-    justify-self: end;
-    line-height: 160px;
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
   }
-  
+
+  .featured-image-3,
   .number-3 {
-    background: black;
-    border-radius: 130px;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 100px;
-    height: 130px;
-    line-height: 130px;
-    position: absolute;
-    grid-row: 6 / 7;
-    right: -20px;
-    text-align: center;
-    top: -20px;
-    width: 130px;
+    grid-row: 4 / 6;
   }
-  
-  .featured-image-3 img {
-    height: 100%;
+
+  .featured-image-4,
+  .number-4 {
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
   }
-  
+
   .number-4 {
     font-size: 320px;
-    left: -20px;
-    line-height: 320px;
-    position: absolute;
+    grid-row: 5 / 7;
   }
-  
-  @media (min-width: 600px) {
-    
-    .wrapper {
-      grid-template-columns: repeat(2, 1fr 2fr);
-      margin: 24px auto;
-    }
-    
-    .header {
-      grid-column: 3 / 5;
-      width: 70%;
-    }
-    
-    .featured-image-1 {
-      grid-row: 1 / 3;
-    }
-    
-    .article-1 {
-      grid-row: 3 / 4;
-    }
-    
-    .article-2 {
-      grid-column: 4 / 5;
-      grid-row: 4 / 5;
-    }
-    
-    .featured-image-2, .number-2 {
-      grid-column: 3 / 5;
-      grid-row: 2 / 4;
-    }
-  
-    .featured-image-3, .number-3 {
-      grid-row: 4 / 6;
-    }
-    
-    .featured-image-4, .number-4 {
-      grid-column: 3 / 5;
-      grid-row: 5 / 6;
-    }
-    
-    .number-4 {
-      font-size: 320px;
-      grid-row: 5 / 7;
-    }
-    
-    .article-3, .article-4 {
-      grid-row: 6 / 7;
-    }
-    
-    .article-4 {
-      grid-column: 4 / 5;
-    }
-    
+
+  .article-3,
+  .article-4 {
+    grid-row: 6 / 7;
   }
+
+  .article-4 {
+    grid-column: 4 / 5;
+  }
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #01244c;
+  border: 2px solid rgba(0, 255, 255, 0.512);
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.imagefront img {
+  border-radius: 20px;
+  width: 92%;
+  margin: 0px 4%;
+  margin-top: -30px;
+  filter: opacity(0.8);
+  transition: 0.6s ease;
+}
+.imagefront img:hover{
+  
+  filter: opacity(1);
+}
+.imageback{
+  position: absolute;
+  top: -30px;
+  left: 4%;
+  border-radius: 20px;
+  width: 92%;
+  background: rgb(0, 51, 255);
+}
+.imageback img { 
+  opacity: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@900&display=swap');
+.title{
+  font-family: "Comfortaa", cursive;
+  color: rgb(0, 243, 214);
+  font-size: 26px;
+  font-weight: 900;
+  padding: 10px 20px ;
+  line-height: 1.1;
+}
+.bar{
+  font-family: "Comfortaa", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px 0px 20px;
+}
+.stats{
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  color: rgba(0, 255, 255, 0.558);
+  margin: 10px 20px;
+  font-size: 18px;
+}
