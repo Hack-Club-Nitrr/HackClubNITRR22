@@ -11,6 +11,7 @@ import {Layout} from "./components/blog/Layout"
 import {Hero} from "./components/hero/Hero"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Register } from "./components/auth/Register";
+import { Login } from "./components/auth/Login";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -22,6 +23,8 @@ ReactDOM.render(
         <Route path="blogs/:id/:title" element={<Layout/>} />
         <Route path="hero" element={<Hero/>} />
         <Route path="register" element={<Register/>} />
+        <Route path="login" element={<Login/>} />
+
 
 
 
