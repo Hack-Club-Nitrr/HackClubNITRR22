@@ -1,11 +1,11 @@
 .intgration-padding {
   padding: 50px 60px;
 }
-.carousel-container {
+/* .carousel-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .carousel-wrapper {
   display: flex;
